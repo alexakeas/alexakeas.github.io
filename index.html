@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Author Portfolio</title>
+        <meta name="description" content="The official portfolio of a contemporary novelist."/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <header class="site-header">
+            <nav class="nav" role="navigation" aria-label="Main Navigation">
+                <a class="logo" href="#hero">Alexa Keas</a>
+                <button class="nav-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#works">Works</a>
+                    </li>
+                    <li>
+                        <a href="#awards">Awards</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="hero" class="hero" aria-label="Hero">
+                <div class="hero-inner">
+                    <h1>Alexa Keas</h1>
+                    <p class="tagline">Romances et vies intimes qui réconcilient le cœur et la vérité.</p>
+                    <a class="btn" href="#works">Explore the works</a>
+                </div>
+            </section>
+
+            <section id="about" class="section about" aria-labelledby="about-heading">
+                <div class="container">
+                    <h2 id="about-heading">À propos de l’autrice</h2>
+                    <div class="about-flex">
+                        <div class="about-photo">
+                            <img src="assets/alexa-keas-2.jpg" alt="Portrait d’Alexa Keas"/>
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                Une jeune femme sensible et romantique à souhait, désirant apporter sa pierre à l'édifice de la littérature. Ecrire est une passion qui la dévore depuis l'adolescence. En 2014, elle révèle sa plume en publiant gracieusement des histoires sur sa page Facebook « L'instant d'une évasion by Alexa Keas ». Elle est très vite adoptée par les lecteurs dont le nombre ne cesse d'augmenter de jour en jour.
+                            </p>
+                            <p>
+                                « Je ne suis pas allée vers l'écriture, c'est elle qui m'a trouvée », a-t-elle l'habitude d'affirmer. S'évader à travers les mots, voyager gratuitement et bien plus encore, c'est ce que Alexa offre à ses lecteurs à chaque lecture de ses livres.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="works" class="section works" aria-labelledby="works-heading">
+                <div class="container">
+                    <h2 id="works-heading">Oeuvres publiées</h2>
+                    <p class="section-intro">Sélection d’ouvrages. Survolez, focus, ou cliquez pour les détails.</p>
+                    <div
+                        class="grid" role="list" aria-label="Books Gallery" id="books-grid">
+                        <!-- Client-side will populate from books.json; noscript fallback only -->
+                        <noscript>
+                            <article class="book" role="listitem">
+                                <img class="cover" src="assets/covers/les-7-french-edition.jpg" alt="Couverture: Les 7"/>
+                                <div class="card-body">
+                                    <div class="meta">
+                                        <span>Français</span>
+                                        <span>Date non spécifiée</span>
+                                    </div>
+                                    <h3>Les 7</h3>
+                                    <p class="quick">Héritage spirituel, secrets familiaux, trahisons.</p>
+                                </div>
+                                <details>
+                                    <summary>
+                                        <span class="chev">›</span>
+                                        <span>Plus de détails</span>
+                                    </summary>
+                                    <div class="details-body">
+                                        <p>Lorsque Mensah SAMA, patriarche craint, respecté et fervent homme de foi, tire sa révérence, il laisse à ses 7 enfants bien plus qu’un héritage matériel. Il leur lègue un héritage spirituel entaché, et un champ de mines où se mêlent secrets de famille, blessures non cicatrisées, jalousies enfouies et trahisons.À mesure que l’histoire évolue, les masques tombent, les tensions explosent, et les liens familiaux se fissurent jusqu’à la rupture.« Les 7 », c’est un roman choral saisissant, où chaque personnage dévoile sa part d’ombre et de lumière.</p>
+                                        <div class="actions">
+                                            <a class="btn-text" href="https://www.amazon.com/dp/B0FBJGK78L" target="_blank" rel="noopener">Voir sur Amazon</a>
+                                        </div>
+                                    </div>
+                                </details>
+                            </article>
+                        </noscript>
+                    </div>
+                </div>
+            </section>
+            <section id="awards" class="section awards" aria-labelledby="awards-heading">
+                <div class="container">
+                    <h2 id="awards-heading">Awards & Recognition</h2>
+                    <ul class="awards-list">
+                        <li>
+                            <strong>2025</strong>— Northstar Fiction Prize, Winner,<em>Still Water, Narrow Light</em>
+                        </li>
+                        <li>
+                            <strong>2023</strong>— Blue Harbor Book Award, Finalist,<em>Rooms We Carry</em>
+                        </li>
+                        <li>
+                            <strong>2022</strong>— National Critics Circle, Longlist,<em>The Distance Between</em>
+                        </li>
+                        <li>
+                            <strong>2020</strong>— City Arts Fellowship for Literature</li>
+                        <li>
+                            <strong>2019</strong>— Harbor Review Editors’ Choice</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="contact" class="section contact" aria-labelledby="contact-heading">
+                <div class="container">
+                    <h2 id="contact-heading">Réseaux & Liens</h2>
+                    <div class="social-row">
+                        <a class="chip" target="_blank" href="https://www.facebook.com/leschroniquesdalexa/" aria-label="Facebook">
+                            <svg viewbox="0 0 24 24" aria-hidden="true"><path fill="#1877F2" d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078V12.07h3.047V9.413c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.235 2.686.235v2.953h-1.513c-1.49 0-1.953.93-1.953 1.887v2.25h3.328l-.532 3.492h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>Facebook</a>
+                        <a class="chip" target="_blank" href="#" aria-label="Instagram">
+                            <svg viewbox="0 0 24 24" aria-hidden="true"><path fill="#E4405F" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A5.5 5.5 0 1 0 17.5 13 5.5 5.5 0 0 0 12 7.5zm6-2a1.25 1.25 0 1 0 1.25 1.25A1.25 1.25 0 0 0 18 5.5z"/></svg>Instagram</a>
+                        <a class="chip" target="_blank" href="https://www.tiktok.com/@on.sfait.des.conf" aria-label="TikTok">
+                            <svg viewbox="0 0 24 24" aria-hidden="true"><path fill="#25F4EE" d="M21 8.5c-2.9 0-5.25-2.35-5.25-5.25H12v12.3a3.25 3.25 0 1 1-2.4-3.14V9.2a6.25 6.25 0 1 0 8.9 5.7V8.74A8.5 8.5 0 0 0 21 8.5z"/></svg>TikTok</a>
+                        <a class="chip" target="_blank" href="https://wa.me/message/YPFX75Z4JSQ6K1" aria-label="WhatsApp">
+                            <svg viewbox="0 0 24 24" aria-hidden="true"><path fill="#25D366" d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0a11.95 11.95 0 0 0-10.3 17.94L0 24l6.2-1.62A12 12 0 1 0 20.52 3.48zm-8.46 18.1a9.9 9.9 0 0 1-5.03-1.38l-.36-.21-3.68.96.98-3.58-.24-.37a9.92 9.92 0 1 1 8.33 4.58zm5.57-7.47c-.3-.15-1.78-.88-2.06-.98-.28-.1-.48-.15-.69.15-.2.3-.8.98-.98 1.18-.18.2-.36.23-.66.08-.3-.15-1.26-.46-2.4-1.46-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.36.45-.54.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.69-1.65-.95-2.26-.25-.6-.5-.52-.69-.53h-.59c-.2 0-.53.08-.81.38-.28.3-1.07 1.05-1.07 2.55 0 1.49 1.1 2.94 1.25 3.14.15.2 2.17 3.32 5.26 4.66.74.32 1.31.5 1.76.64.74.24 1.41.21 1.95.13.6-.09 1.78-.73 2.03-1.43.25-.7.25-1.3.17-1.43-.07-.13-.27-.2-.57-.35z"/></svg>WhatsApp</a>
+                        <a class="chip" target="_blank" href="https://x.com/AlexaKeas" aria-label="Twitter">
+                            <svg viewbox="0 0 24 24" aria-hidden="true"><path fill="#1DA1F2" d="M23 4.8c-.8.4-1.7.7-2.6.8.9-.5 1.6-1.4 1.9-2.4-.9.5-1.9.9-3 .1C18.3 2.5 17 2 15.6 2c-2.7 0-4.8 2.2-4.8 4.9 0 .4 0 .8.1 1.1-4-.2-7.6-2.2-9.9-5.3-.4.8-.6 1.6-.6 2.5 0 1.7.8 3.1 2.1 4-.8 0-1.5-.2-2.1-.6v.1c0 2.4 1.7 4.4 3.9 4.9-.4.1-.9.2-1.3.2-.3 0-.6 0-.9-.1.6 2 2.5 3.5 4.7 3.5-1.7 1.3-3.8 2.1-6.1 2.1H1c2.2 1.4 4.8 2.3 7.6 2.3 9.1 0 14.1-7.6 14.1-14.1v-.6c1-.7 1.7-1.5 2.3-2.4z"/></svg>Twitter</a>
+                        <a class="chip" target="_blank" href="https://www.amazon.fr/stores/author/B06XTF4266/" aria-label="Amazon">
+                            <svg viewbox="0 0 24 24" aria-hidden="true"><path fill="#FF9900" d="M12.1 18.4c-3.1 0-5.6-2.4-5.6-5.4 0-3.1 2.5-5.5 5.6-5.5 1.5 0 2.6.5 3.5 1.2l-1.4 1.4c-.6-.4-1.3-.7-2.1-.7-2.1 0-3.8 1.7-3.8 3.8 0 2 1.7 3.7 3.8 3.7 1.9 0 3.2-1.1 3.4-2.6h-3.4v-1.9h5.5c.1.4.1.7.1 1.1 0 3.1-2.1 5.9-5.6 5.9zm9.6 2.2c-2.7 2.4-6.6 3.6-9.9 3.6-4.6 0-9-1.7-12.2-4.6-.7-.6-.1-1.5.8-1.1 3.5 1.3 7.3 2 11.2 1.4 3.1-.5 6-1.6 8.6-3.3.8-.6 1.6.4 1.5 1.1 0 .5 0 .9 0 1.3z"/></svg>Amazon</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="container">
+                <p>©<span id="year"></span>Alexa Keas. Tous droits réservés.</p>
+            </div>
+        </footer>
+        <script>
+            // Progressive enhancement: simple nav toggle for small screens (no frameworks)
+            const toggle = document.querySelector('.nav-toggle');
+            const links = document.querySelector('.nav-links');
+            if (toggle && links) {
+                toggle.addEventListener('click', () => {
+                    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                    toggle.setAttribute('aria-expanded', String(! expanded));
+                    links.classList.toggle('open');
+                });
+            }
+            const yearEl = document.getElementById('year');
+            if (yearEl) 
+                yearEl.textContent = new Date().getFullYear();
+            
+
+
+            // Auto-close details when focus leaves or on scroll
+            const detailsList = Array.from(document.querySelectorAll('#books-grid details'));
+            function closeAll(except) {
+                for (const d of detailsList) {
+                    if (d !== except) 
+                        d.open = false;
+                    
+
+
+                }
+            }
+            detailsList.forEach(d => {
+                d.addEventListener('toggle', () => {
+                    if (d.open) 
+                        closeAll(d);
+                    
+
+
+                });
+                d.addEventListener('focusout', (e) => { // If focus moves outside this details, close it
+                    setTimeout(() => {
+                        if (!d.contains(document.activeElement)) 
+                            d.open = false;
+                        
+
+
+                    }, 0);
+                });
+            });
+            window.addEventListener('scroll', () => closeAll());
+
+            // Client-side books loader (progressive enhancement)
+            (async () => {
+                const grid = document.getElementById('books-grid');
+                    if (! grid) 
+                        return;
+                    
+                    // Purge any hardcoded fallback <article class="book"> inside #works container
+                    const worksContainer = document.querySelector('#works .container');
+                    if (worksContainer) {
+                        worksContainer.querySelectorAll('article.book').forEach(el => el.remove());
+                    }
+                    try {
+                        const remoteUrl = 'https://raw.githubusercontent.com/yaovicoder/alexakeas/refs/heads/main/portfolio/books.json';
+                        let books = null;                        
+                        try {
+                            const r = await fetch(remoteUrl, { cache: 'no-cache' });
+                            if (r.ok) books = await r.json();
+                        } catch {}
+                        if (!books) {
+                            try {
+                                const r2 = await fetch('books.json', { cache: 'no-cache' });
+                                if (r2.ok) books = await r2.json();
+                            } catch {}
+                        }
+                        if (! books) 
+                            books = getEmbedded() || [];
+                        
+                        const normYear = y => {
+                            if (!y) 
+                                return null;
+                            
+                            const n = parseInt(String(y).replace(/[^0-9]/g, ''), 10);
+                            return Number.isFinite(n) ? n : null;
+                        };
+                        // Sort: by publicationDate desc first, then items without date
+                        const withDate = [],
+                            withoutDate = [];
+                        books.forEach((b, i) => (normYear(b.publicationDate) !== null ? withDate : withoutDate).push({
+                            ...b,
+                            __i: i
+                        }));
+                        withDate.sort((a, b) => normYear(b.publicationDate) - normYear(a.publicationDate));
+                        const ordered = withDate.concat(withoutDate);
+
+                        const toCard = b => `\n<article class="book" role="listitem">\n  <img class="cover" src="${
+                            b.cover
+                        }" alt="Couverture: ${
+                            b.title
+                        }" loading="lazy"/>\n  <div class="card-body">\n    <div class="meta"><span>${
+                            b.lang || '—'
+                        }</span><span>${
+                            b.publicationDate || '—'
+                        }</span></div>\n    <h3>${
+                            b.title
+                        }</h3>\n    <p class="quick">${
+                            b.blurb || ''
+                        }</p>\n  </div>\n  <details>\n    <summary><span class="chev">›</span><span>Plus de détails</span></summary>\n    <div class="details-body">\n      <p>${
+                            b.synopsis || ''
+                        }</p>\n      <div class="actions">\n        <a class="btn-text" href="${
+                            b.link || '#'
+                        }" target="_blank" rel="noopener">Voir sur Amazon</a>\n      </div>\n    </div>\n  </details>\n</article>`;
+
+                        grid.innerHTML = ordered.map(toCard).join('');
+                    } catch (err) { // keep server-rendered fallback
+                        console.warn('books.json load error', err);
+                    }
+                }
+            )();
+            </script>
+        </body>
+        </body>
+    </body>
+</html>
