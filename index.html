@@ -204,7 +204,7 @@
                         worksContainer.querySelectorAll('article.book').forEach(el => el.remove());
                     }
                     try {
-                        const remoteUrl = 'https://raw.githubusercontent.com/yaovicoder/alexakeas/refs/heads/main/portfolio/books.json';
+                        const remoteUrl = 'https://raw.githubusercontent.com/alexakeas/alexakeas.github.io/refs/heads/portfolio/books.json';
                         let books = null;                        
                         try {
                             const r = await fetch(remoteUrl, { cache: 'no-cache' });
@@ -216,8 +216,6 @@
                                 if (r2.ok) books = await r2.json();
                             } catch {}
                         }
-                        if (! books) 
-                            books = getEmbedded() || [];
                         
                         const normYear = y => {
                             if (!y) 
